@@ -80,7 +80,7 @@ def set_plot_style():
         'font.size': 14
     })
 
-def plot_comparison(data, vary1, vary2, title=None, save_path=None,all=None):
+def plot_comparison(data, vary1, vary2, title=None, save_path=None,all=None, marker='o', color1='tab:blue', color2='tab:orange', err_kws=None):
     set_plot_style()
     fig, ax = plt.subplots()
     if all:
@@ -95,8 +95,8 @@ def plot_comparison(data, vary1, vary2, title=None, save_path=None,all=None):
     estimator='mean',
     errorbar='sd',      # 'sd' para desviación estándar, o 'ci' para intervalo de confianza
     err_style='band',   # o 'bars' para barras verticales
-    marker='o',          # opcional para marcar puntos medios
-    ax=ax,color='tab:blue')
+    marker=marker,          # opcional para marcar puntos medios
+    ax=ax,color=color1,**(err_kws or {}))
     
     sns.lineplot(
     data=DFx2,
@@ -105,8 +105,8 @@ def plot_comparison(data, vary1, vary2, title=None, save_path=None,all=None):
     estimator='mean',
     errorbar='sd',      # 'sd' para desviación estándar, o 'ci' para intervalo de confianza
     err_style='band',   # o 'bars' para barras verticales
-    marker='o',          # opcional para marcar puntos medios
-    ax=ax,color='tab:orange')
+    marker=marker,          # opcional para marcar puntos medios
+    ax=ax,color=color2,**(err_kws or {}))
     if title:
         ax.set_title(title)
     if save_path:
@@ -115,23 +115,26 @@ def plot_comparison(data, vary1, vary2, title=None, save_path=None,all=None):
 
 
 
-def plot_single(data, vary, title=None, save_path=None):
+def plot_single(data, vary, title=None, save_path=None,ax=None,fig=None,scatter=False,estim='mean',error='band', marker='o', color='tab:blue', err_kws=None):
     set_plot_style()
-    fig, ax = plt.subplots()
-    sns.scatterplot(data=data,x='t_norm',y=vary,alpha=0.2,ax=ax)
+    if ax is None:
+        fig, ax = plt.subplots()
+    
+    if scatter:
+        sns.scatterplot(data=data,x='t_norm',y=vary,alpha=0.2,ax=ax)
 
     DFx2=data.groupby(['AR','t_mean']).mean().reset_index()
     sns.lineplot(
     data=DFx2,
     x='t_mean',
     y=vary,
-    estimator='mean',
+    estimator=estim,
     errorbar='sd',      # 'sd' para desviación estándar, o 'ci' para intervalo de confianza
-    err_style='band',   # o 'bars' para barras verticales
-    marker='o',          # opcional para marcar puntos medios
-    ax=ax)
+    err_style=error,   # o 'bars' para barras verticales
+    marker=marker,          # opcional para marcar puntos medios
+    ax=ax,color=color,**(err_kws or {}))
     if title:
         ax.set_title(title)
     if save_path:
         plt.savefig(save_path, bbox_inches='tight')
-    return fig, ax
+    return fig,ax

@@ -30,7 +30,13 @@ def correct_df(df):
     df.loc[df['da']>= df['cond1'], 'gamma'] = 180*np.arccos((df.R+df.a)*(1-df.da)/df.R)/np.pi
 
     df=df.assign(sepax=lambda x: 2*pixsize*x.R*np.sin(np.pi*x.gamma/180))
+    
+    df['stp'] = df.groupby('AR')['mag'].transform(lambda x: np.gradient(x))
     df['sar']=df['sar'].apply(lambda x: pixsize*x)
+    df["rot_cum"]  = df.groupby("AR")["rot"].cumsum()
+    df["rotb_cum"] = df.groupby("AR")["rotb"].cumsum()
+    df=df.assign(rot_cum=lambda x: x.rot_cum*1.5*x.stp)
+    df=df.assign(rotb_cum=lambda x: x.rotb_cum*1.5*x.stp)
 
     return df
 
@@ -82,10 +88,11 @@ def norm_time(DF):
         # Definir eje de tiempo normalizado
         t_norm = (DF2.mag.values/ magmax - intercept) / (1 - intercept)
 
-        DFx.append(pd.DataFrame({'AR':name,'alpha':DF2.alpha.values,'alphab':DF2.alphab.values,'t_norm':t_norm,
-                             'lat':DF2.lat.mean(),'fn':DF2.fint.values,'Nt':DF2.N0.values,
-                             'sar':DF2.sar.values,'sepax':DF2.sepax.values,
-                             'mag':DF2.mag.values,'flux':DF2.flux.values,'fint':DF2.fint.values}))
+        DFx.append(DF2.assign(t_norm=t_norm))
+        #DFx.append(pd.DataFrame({'AR':name,'alpha':DF2.alpha.values,'alphab':DF2.alphab.values,'t_norm':t_norm,
+                 #            'lat':DF2.lat.mean(),'fn':DF2.fint.values,'Nt':DF2.N0.values,
+                 #            'sar':DF2.sar.values,'sepax':DF2.sepax.values,
+                #           'mag':DF2.mag.values,'flux':DF2.flux.values,'fint':DF2.fint.values}))
 
     DFx=pd.concat(DFx)    
     return DFx
