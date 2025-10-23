@@ -115,24 +115,27 @@ def plot_comparison(data, vary1, vary2, title=None, save_path=None,all=None, mar
 
 
 
-def plot_single(data, vary, title=None, save_path=None,ax=None,fig=None,scatter=False,estim='mean',error='band', marker='o', color='tab:blue', err_kws=None):
+def plot_single(data, vary, title=None, save_path=None,ax=None,fig=None,scatter=False,estim='mean',error='band', marker='o', color='tab:blue', err_kws=None,ls='-'):
     set_plot_style()
     if ax is None:
         fig, ax = plt.subplots()
     
     if scatter:
-        sns.scatterplot(data=data,x='t_norm',y=vary,alpha=0.2,ax=ax)
+        sns.scatterplot(data=data,x='t_norm',y=vary,alpha=0.2,ax=ax,color=color,label=vary)
 
     DFx2=data.groupby(['AR','t_mean']).mean().reset_index()
     sns.lineplot(
     data=DFx2,
     x='t_mean',
     y=vary,
+    linestyle=ls,
+    linewidth=2,
+    markersize=10,
     estimator=estim,
     errorbar='sd',      # 'sd' para desviación estándar, o 'ci' para intervalo de confianza
     err_style=error,   # o 'bars' para barras verticales
     marker=marker,          # opcional para marcar puntos medios
-    ax=ax,color=color,**(err_kws or {}))
+    ax=ax,label=f'{estim} {vary}',color=color,**(err_kws or {}))
     if title:
         ax.set_title(title)
     if save_path:
