@@ -1,0 +1,397 @@
+\begin{thebibliography}{22}
+% BibTex style file: spr-mp-sola.bst, v2.06, 2023-07-27
+\ifx\bisbn     \undefined \def\bisbn  #1{ISBN #1}\fi
+\ifx\binits    \undefined \def\binits#1{#1}\fi
+\ifx\bauthor   \undefined \def\bauthor#1{#1}\fi
+\ifx\batitle   \undefined \def\batitle#1{#1}\fi
+\ifx\bjtitle   \undefined \def\bjtitle#1{\textit{#1}}\fi
+\ifx\bvolume   \undefined \def\bvolume#1{\textbf{#1}}\fi
+\ifx\byear     \undefined \def\byear#1{#1}\fi
+\ifx\bissue    \undefined \def\bissue#1{#1}\fi
+\ifx\bfpage    \undefined \def\bfpage#1{#1}\fi
+\ifx\blpage    \undefined \def\blpage #1{#1}\fi
+\ifx\burl      \undefined \def\burl#1{#1}\fi
+\ifx\href      \undefined \def\href#1#2{#2}\fi
+\ifx\betal     \undefined \def\betal{et al.}\fi
+\ifx\bctitle   \undefined \def\bctitle#1{#1}\fi
+\ifx\beditor   \undefined \def\beditor#1{#1}\fi
+\ifx\bbtitle   \undefined \def\bbtitle#1{\textit{#1}}\fi
+\ifx\bedition  \undefined \def\bedition#1{#1}\fi
+\ifx\bseriesno \undefined \def\bseriesno#1{\textbf{#1}}\fi
+\ifx\blocation \undefined \def\blocation#1{#1}\fi
+\ifx\bsertitle \undefined \def\bsertitle#1{\textit{#1}}\fi
+\ifx\bsnm      \undefined \def\bsnm#1{#1}\fi
+\ifx\bsuffix   \undefined \def\bsuffix#1{#1}\fi
+\ifx\bparticle \undefined \def\bparticle#1{#1}\fi
+\ifx\barticle  \undefined \def\barticle#1{}\fi
+\ifx\binstitute  \undefined \def\binstitute#1{#1}\fi
+\ifx\bpublisher  \undefined \def\bpublisher#1{#1}\fi
+\ifx\doiurl    \undefined \def\doiurl#1{\href{#1}{DOI}}\fi
+\makeatletter
+\def\safeHref#1#2#3{\in@{http}{#2}\ifin@\href{#2}{#3}\else\href{#1#2}{#3}\fi}
+\makeatother
+\ifx\adsurl    \undefined \def\adsurl#1{\safeHref{https://ui.adsabs.harvard.edu/abs/}{#1}{ADS}}\fi
+\ifx\arxivurl  \undefined \def\arxivurl#1{\safeHref{http://arxiv.org/abs/}{#1}{arXiv}}\fi
+\ifx\botherref \undefined \def\botherref#1{}\fi
+\ifx\url       \undefined \def\url#1{#1}\fi
+\ifx\bchapter  \undefined \def\bchapter#1{}\fi
+\ifx\bbook     \undefined \def\bbook#1{}\fi
+\ifx\bcomment  \undefined \def\bcomment#1{#1}\fi
+\ifx\oauthor   \undefined \def\oauthor#1{#1}\fi
+\ifx\citeauthoryear \undefined\def \citeauthoryear#1{#1}\fi
+\def\endbibitem {}
+\ifx\bconflocation  \undefined \def\bconflocation#1{#1} \fi
+
+\bibitem[\protect\citeauthoryear{{Baranyi}, {Gy{\H{o}}ri}, and {Ludm{\'a}ny}}{2016}]{Baranyi16}
+\begin{barticle}
+\bauthor{\bsnm{{Baranyi}}, \binits{T.}},
+\bauthor{\bsnm{{Gy{\H{o}}ri}}, \binits{L.}},
+\bauthor{\bsnm{{Ludm{\'a}ny}}, \binits{A.}}:
+\byear{2016},
+\batitle{{On-line Tools for Solar Data Compiled at the Debrecen Observatory and Their Extensions with the Greenwich Sunspot Data}}.
+\bjtitle{\solphys}
+\bvolume{291},
+\bfpage{3081}.
+\doiurl{https://doi.org/10.1007/s11207-016-0930-1}.
+\adsurl{2016SoPh..291.3081B}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Cheung} and {Isobe}}{2014}]{cheung2014}
+\begin{barticle}
+\bauthor{\bsnm{{Cheung}}, \binits{M.C.M.}},
+\bauthor{\bsnm{{Isobe}}, \binits{H.}}:
+\byear{2014},
+\batitle{{Flux Emergence (Theory)}}.
+\bjtitle{Living Reviews in Solar Physics}
+\bvolume{11},
+\bfpage{3}.
+\doiurl{https://doi.org/10.12942/lrsp-2014-3}.
+\adsurl{2014LRSP...11....3C}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Dasi-Espuig} et~al.}{2010}]{dasi2010}
+\begin{barticle}
+\bauthor{\bsnm{{Dasi-Espuig}}, \binits{M.}},
+\bauthor{\bsnm{{Solanki}}, \binits{S.K.}},
+\bauthor{\bsnm{{Krivova}}, \binits{N.A.}},
+\bauthor{\bsnm{{Cameron}}, \binits{R.}},
+\bauthor{\bsnm{{Pe{\~n}uela}}, \binits{T.}}:
+\byear{2010},
+\batitle{{Sunspot group tilt angles and the strength of the solar cycle}}.
+\bjtitle{\aap}
+\bvolume{518},
+\bfpage{A7}.
+\doiurl{https://doi.org/10.1051/0004-6361/201014301}.
+\adsurl{2010A&A...518A...7D}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Fan}}{2001}]{fan2001}
+\begin{barticle}
+\bauthor{\bsnm{{Fan}}, \binits{Y.}}:
+\byear{2001},
+\batitle{{The Emergence of a Twisted {\ensuremath{\Omega}}-Tube into the Solar Atmosphere}}.
+\bjtitle{\apjl}
+\bvolume{554},
+\bfpage{L111}.
+\doiurl{https://doi.org/10.1086/320935}.
+\adsurl{2001ApJ...554L.111F}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Hale} et~al.}{1919}]{Hale19}
+\begin{barticle}
+\bauthor{\bsnm{{Hale}}, \binits{G.E.}},
+\bauthor{\bsnm{{Ellerman}}, \binits{F.}},
+\bauthor{\bsnm{{Nicholson}}, \binits{S.B.}},
+\bauthor{\bsnm{{Joy}}, \binits{A.H.}}:
+\byear{1919},
+\batitle{{The Magnetic Polarity of Sun-Spots}}.
+\bjtitle{\apj}
+\bvolume{49},
+\bfpage{153}.
+\doiurl{https://doi.org/10.1086/142452}.
+\adsurl{1919ApJ....49..153H}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Jiang}}{2020}]{jiang2020}
+\begin{barticle}
+\bauthor{\bsnm{{Jiang}}, \binits{J.}}:
+\byear{2020},
+\batitle{{Nonlinear Mechanisms that Regulate the Solar Cycle Amplitude}}.
+\bjtitle{\apj}
+\bvolume{900},
+\bfpage{19}.
+\doiurl{https://doi.org/10.3847/1538-4357/abaa4b}.
+\adsurl{2020ApJ...900...19J}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Liu} et~al.}{2016}]{liu2016}
+\begin{barticle}
+\bauthor{\bsnm{{Liu}}, \binits{J.}},
+\bauthor{\bsnm{{Wang}}, \binits{Y.}},
+\bauthor{\bsnm{{Erd{\'e}lyi}}, \binits{R.}},
+\bauthor{\bsnm{{Liu}}, \binits{R.}},
+\bauthor{\bsnm{{McIntosh}}, \binits{S.W.}},
+\bauthor{\bsnm{{Gou}}, \binits{T.}},
+\bauthor{\bsnm{{Chen}}, \binits{J.}},
+\bauthor{\bsnm{{Liu}}, \binits{K.}},
+\bauthor{\bsnm{{Liu}}, \binits{L.}},
+\bauthor{\bsnm{{Pan}}, \binits{Z.}}:
+\byear{2016},
+\batitle{{On the Magnetic and Energy Characteristics of Recurrent Homologous Jets from An Emerging Flux}}.
+\bjtitle{\apj}
+\bvolume{833},
+\bfpage{150}.
+\doiurl{https://doi.org/10.3847/1538-4357/833/2/150}.
+\adsurl{2016ApJ...833..150L}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Liu, Zhao, and Hoeksema}{2004}]{Liu04}
+\begin{barticle}
+\bauthor{\bsnm{Liu}, \binits{Y.}},
+\bauthor{\bsnm{Zhao}, \binits{X.}},
+\bauthor{\bsnm{Hoeksema}, \binits{J.T.}}:
+\byear{2004},
+\batitle{Correction of Offset in MDI/SOHO Magnetograms}.
+\bjtitle{Solar Physics}
+\bvolume{219},
+\bfpage{39}.
+\doiurl{https://doi.org/10.1023/B:SOLA.0000021822.07430.d6}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{L{\'o}pez Fuentes} et~al.}{2000}]{Lopez-Fuentes00}
+\begin{barticle}
+\bauthor{\bsnm{{L{\'o}pez Fuentes}}, \binits{M.C.}},
+\bauthor{\bsnm{{D{\'e}moulin}}, \binits{P.}},
+\bauthor{\bsnm{{Mandrini}}, \binits{C.H.}},
+\bauthor{\bsnm{{van Driel-Gesztelyi}}, \binits{L.}}:
+\byear{2000},
+\batitle{{The counterkink rotation of a non-Hale active region}}.
+\bjtitle{\apj}
+\bvolume{544},
+\bfpage{540}.
+\doiurl{https://doi.org/10.1086/317180}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Luoni} et~al.}{2011}]{luoni2011}
+\begin{barticle}
+\bauthor{\bsnm{{Luoni}}, \binits{M.L.}},
+\bauthor{\bsnm{{D{\'e}moulin}}, \binits{P.}},
+\bauthor{\bsnm{{Mandrini}}, \binits{C.H.}},
+\bauthor{\bsnm{{van Driel-Gesztelyi}}, \binits{L.}}:
+\byear{2011},
+\batitle{{Twisted Flux Tube Emergence Evidenced in Longitudinal Magnetograms: Magnetic Tongues}}.
+\bjtitle{\solphys}
+\bvolume{270},
+\bfpage{45}.
+\doiurl{https://doi.org/10.1007/s11207-011-9731-8}.
+\adsurl{http://cdsads.u-strasbg.fr/abs/2011SoPh..270...45L}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Poisson} et~al.}{2016}]{Poisson16}
+\begin{barticle}
+\bauthor{\bsnm{{Poisson}}, \binits{M.}},
+\bauthor{\bsnm{{D{\'e}moulin}}, \binits{P.}},
+\bauthor{\bsnm{{L{\'o}pez Fuentes}}, \binits{M.}},
+\bauthor{\bsnm{{Mandrini}}, \binits{C.H.}}:
+\byear{2016},
+\batitle{{Properties of Magnetic Tongues over a Solar Cycle}}.
+\bjtitle{\solphys}
+\bvolume{291},
+\bfpage{1625}.
+\doiurl{https://doi.org/10.1007/s11207-016-0926-x}.
+\adsurl{2016SoPh..291.1625P}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Poisson} et~al.}{2020a}]{Poisson20a}
+\begin{barticle}
+\bauthor{\bsnm{{Poisson}}, \binits{M.}},
+\bauthor{\bsnm{{L\'opez Fuentes}}, \binits{M.C.}},
+\bauthor{\bsnm{{Mandrini}}, \binits{C.H.}},
+\bauthor{\bsnm{{D\'emoulin}}, \binits{P.}},
+\bauthor{\bsnm{{MacCormack}}, \binits{C.}}:
+\byear{2020}a,
+\batitle{Correcting the effect of magnetic tongues on the tilt angle of bipolar active regions}.
+\bjtitle{A\&A}
+\bvolume{633},
+\bfpage{A151}.
+\doiurl{https://doi.org/10.1051/0004-6361/201936924}.
+\burl{https://doi.org/10.1051/0004-6361/201936924}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{Poisson et~al.}{2020b}]{Poisson2020b}
+\begin{barticle}
+\bauthor{\bsnm{Poisson}, \binits{M.}},
+\bauthor{\bsnm{D{\'{e}}moulin}, \binits{P.}},
+\bauthor{\bsnm{Mandrini}, \binits{C.H.}},
+\bauthor{\bsnm{Fuentes}, \binits{M.C.L.}}:
+\byear{2020}b,
+\batitle{Active-region Tilt Angles from White-light Images and Magnetograms: The Role of Magnetic Tongues}.
+\bjtitle{The Astrophysical Journal}
+\bvolume{894},
+\bfpage{131}.
+\doiurl{https://doi.org/10.3847/1538-4357/ab8944}.
+\burl{https://doi.org/10.3847/1538-4357/ab8944}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Poisson} et~al.}{2022}]{Poisson22}
+\begin{barticle}
+\bauthor{\bsnm{{Poisson}}, \binits{M.}},
+\bauthor{\bsnm{{Grings}}, \binits{F.}},
+\bauthor{\bsnm{{Mandrini}}, \binits{C.H.}},
+\bauthor{\bsnm{{L\'opez Fuentes}}, \binits{M.}},
+\bauthor{\bsnm{{D\'emoulin}}, \binits{P.}}:
+\byear{2022},
+\batitle{Bayesian approach for modeling global magnetic parameters for the solar active region}.
+\bjtitle{A\&A}
+\bvolume{665},
+\bfpage{A101}.
+\doiurl{https://doi.org/10.1051/0004-6361/202244058}.
+\burl{https://doi.org/10.1051/0004-6361/202244058}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Poisson} et~al.}{2024}]{Poisson24}
+\begin{barticle}
+\bauthor{\bsnm{{Poisson}}, \binits{M.}},
+\bauthor{\bsnm{{L{\'o}pez Fuentes}}, \binits{M.}},
+\bauthor{\bsnm{{Mandrini}}, \binits{C.H.}},
+\bauthor{\bsnm{{D{\'e}moulin}}, \binits{P.}},
+\bauthor{\bsnm{{Grings}}, \binits{F.}}:
+\byear{2024},
+\batitle{{Modeling Global Magnetic-Flux Emergence in Bipolar Solar-Active Regions}}.
+\bjtitle{\solphys}
+\bvolume{299},
+\bfpage{56}.
+\doiurl{https://doi.org/10.1007/s11207-024-02303-0}.
+\adsurl{2024SoPh..299...56P}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Poisson} et~al.}{2025}]{Poisson25}
+\begin{botherref}
+\oauthor{\bsnm{{Poisson}}, \binits{M.}},
+\oauthor{\bsnm{{D{\'e}moulin}}, \binits{P.}},
+\oauthor{\bsnm{{L{\'o}pez Fuentes}}, \binits{M.}},
+\oauthor{\bsnm{{Mandrini}}, \binits{C.H.}}:
+2025,
+{Bayesian Modeling of Emerging Bipolar Active Regions from Solar Cycle 23}.
+\textit{\solphys}
+\textbf{submitted}.
+\end{botherref}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Scherrer} et~al.}{1995}]{Scherrer95}
+\begin{barticle}
+\bauthor{\bsnm{{Scherrer}}, \binits{P.H.}},
+\bauthor{\bsnm{{Bogart}}, \binits{R.S.}},
+\bauthor{\bsnm{{Bush}}, \binits{R.I.}},
+\bauthor{\bsnm{{Hoeksema}}, \binits{J.T.}},
+\bauthor{\bsnm{{Kosovichev}}, \binits{A.G.}},
+\bauthor{\bsnm{{Schou}}, \binits{J.}},
+\bauthor{\bsnm{{Rosenberg}}, \binits{W.}},
+\bauthor{\bsnm{{Springer}}, \binits{L.}},
+\bauthor{\bsnm{{Tarbell}}, \binits{T.D.}},
+\bauthor{\bsnm{{Title}}, \binits{A.}},
+\bauthor{\bsnm{{Wolfson}}, \binits{C.J.}},
+\bauthor{\bsnm{{Zayer}}, \binits{I.}},
+\bauthor{\bsnm{{MDI Engineering Team}}}:
+\byear{1995},
+\batitle{{The Solar Oscillations Investigation - Michelson Doppler Imager}}.
+\bjtitle{\solphys}
+\bvolume{162},
+\bfpage{129}.
+\doiurl{https://doi.org/10.1007/BF00733429}.
+\adsurl{1995SoPh..162..129S}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Schrijver} and {Zwaan}}{2000}]{schrijver2000}
+\begin{bbook}
+\bauthor{\bsnm{{Schrijver}}, \binits{C.J.}},
+\bauthor{\bsnm{{Zwaan}}, \binits{C.}}:
+\byear{2000},
+\bbtitle{{Solar and Stellar Magnetic Activity}}.
+\adsurl{2000ssma.book.....S}.
+\end{bbook}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Stenflo} and {Kosovichev}}{2012}]{stenflo2012}
+\begin{barticle}
+\bauthor{\bsnm{{Stenflo}}, \binits{J.O.}},
+\bauthor{\bsnm{{Kosovichev}}, \binits{A.G.}}:
+\byear{2012},
+\batitle{{Bipolar Magnetic Regions on the Sun: Global Analysis of the SOHO/MDI Data Set}}.
+\bjtitle{\apj}
+\bvolume{745},
+\bfpage{129}.
+\doiurl{https://doi.org/10.1088/0004-637X/745/2/129}.
+\adsurl{2012ApJ...745..129S}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Toriumi} and {Wang}}{2019}]{toriumi2019}
+\begin{barticle}
+\bauthor{\bsnm{{Toriumi}}, \binits{S.}},
+\bauthor{\bsnm{{Wang}}, \binits{H.}}:
+\byear{2019},
+\batitle{{Flare-productive active regions}}.
+\bjtitle{Living Reviews in Solar Physics}
+\bvolume{16},
+\bfpage{3}.
+\doiurl{https://doi.org/10.1007/s41116-019-0019-7}.
+\adsurl{2019LRSP...16....3T}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{T{\"o}r{\"o}k} et~al.}{2018}]{torok2018}
+\begin{barticle}
+\bauthor{\bsnm{{T{\"o}r{\"o}k}}, \binits{T.}},
+\bauthor{\bsnm{{Downs}}, \binits{C.}},
+\bauthor{\bsnm{{Linker}}, \binits{J.A.}},
+\bauthor{\bsnm{{Lionello}}, \binits{R.}},
+\bauthor{\bsnm{{Titov}}, \binits{V.S.}},
+\bauthor{\bsnm{{Miki{\'c}}}, \binits{Z.}},
+\bauthor{\bsnm{{Riley}}, \binits{P.}},
+\bauthor{\bsnm{{Caplan}}, \binits{R.M.}},
+\bauthor{\bsnm{{Wijaya}}, \binits{J.}}:
+\byear{2018},
+\batitle{{Sun-to-Earth MHD Simulation of the 2000 July 14 {\textquotedblleft}Bastille Day{\textquotedblright} Eruption}}.
+\bjtitle{\apj}
+\bvolume{856},
+\bfpage{75}.
+\doiurl{https://doi.org/10.3847/1538-4357/aab36d}.
+\adsurl{2018ApJ...856...75T}.
+\end{barticle}
+\endbibitem
+
+\bibitem[\protect\citeauthoryear{{Yeates} et~al.}{2023}]{Yeates2023}
+\begin{barticle}
+\bauthor{\bsnm{{Yeates}}, \binits{A.R.}},
+\bauthor{\bsnm{{Cheung}}, \binits{M.C.M.}},
+\bauthor{\bsnm{{Jiang}}, \binits{J.}},
+\bauthor{\bsnm{{Petrovay}}, \binits{K.}},
+\bauthor{\bsnm{{Wang}}, \binits{Y.-M.}}:
+\byear{2023},
+\batitle{{Surface Flux Transport on the Sun}}.
+\bjtitle{\ssr}
+\bvolume{219},
+\bfpage{31}.
+\doiurl{https://doi.org/10.1007/s11214-023-00978-8}.
+\adsurl{2023SSRv..219...31Y}.
+\end{barticle}
+\endbibitem
+
+\end{thebibliography}
