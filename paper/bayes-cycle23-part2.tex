@@ -269,6 +269,12 @@ The differences between the two methods are largest during the early stages of e
  \end{figure}
 
 
+    \begin{figure} 
+  \centerline{\includegraphics[width=0.99\textwidth,clip=]{./plots/hist_cumrot.pdf}}
+ \caption{Distribution of the cumulative rotation during the emergence of ARs. Blue and orange distributions indicate the rotations obtained using the Bayesian method and the barycenter method, respectively. Panels corresponds to the cumulative rotation obtained for 108 (a), lower flux (b), and higher flux (c) ARs.
+ } \label{fig:cum-gamma}
+ \end{figure}
+
 
 Figure~\ref{fig:gamma}a presents the temporal evolution of the bipole rotation, $\gamma$, as a function of $t_\mathrm{norm}$ for the full sample of 108 ARs. The blue and orange curves correspond to values derived from the tilt angles obtained with the model ($\gamma_\mathrm{mod}$) and with the magnetic barycenters ($\gamma_\mathrm{bar}$), respectively. Solid dots with connecting lines indicate the mean value %s per AR 
 %in each temporal bin, while 
@@ -283,17 +289,57 @@ The distribution of the difference between $\gamma_\mathrm{mod}$ and $\gamma_\ma
  
 
   
-\section{Latitudinal dependance of the Tilt Angle} %Methods} %%%%%%%%%%%%%%
+\section{Latitudinal dependance of the Tilt Angle} %Methods %%%%%%%%%%%%%%
   \label{S-latitude}
 
 
 
+   \begin{figure} 
+ \centerline{\includegraphics[width=0.99\textwidth,clip=]{./plots/alpha-vs-t_norm-by-lat.pdf}}
+ \caption{Evolution of $\alpha$ as a function of the normalized time $t_\mathrm{norm}$ for different latitudinal bins. Each panel corresponds to a specific latitude bin, with solid lines representing the median $\alpha$ values and shaded areas indicating the standard deviation. Scatter points show individual data points.} \label{fig:alpha-lat}
+ \end{figure}
 
 
+   \begin{figure} 
+ \centerline{\includegraphics[width=0.99\textwidth,clip=]{./plots/alpha-vs-lat-by-tnorm.pdf}}
+ \caption{Mean tilt as a function of latitude for different normalized time bins. Each panel corresponds to a specific normalized time bin, with blue (orange) dots representing $\alpha_\mathrm{mod}$ ($\alpha_\mathrm{bar}$) individual data points. The dashed lines indicate the linear least-squares fits for both methods.} \label{fig:alpha-lat}
+ \end{figure}
+
+\begin{table}[ht]
+\centering
+\caption{RMS error and Pearson correlation (rho) by time bin.}
+\label{tab:timebins}
+\begin{tabular}{lcccc}
+\hline
+Time bin & RSME $\alpha$ (deg) & $\rho_{\alpha}$ & RSME $\alpha_{\mathrm{bar}}$ (deg) & $\rho_{\alpha_{\mathrm{bar}}}$ \\
+\hline
+-0.10 -- 0.40 & 17.67 & 0.1397 & 18.97 & 0.1926 \\
+0.40 -- 0.62  & 14.93 & 0.1598 & 14.75 & 0.2621 \\
+0.62 -- 0.83  & 13.05 & 0.2206 & 13.84 & 0.2656 \\
+0.83 -- 1.05  & 12.72 & 0.2742 & 13.10 & 0.2971 \\
+\hline
+\end{tabular}
+\end{table}
 
 
+   \begin{figure} 
+ \centerline{\includegraphics[width=0.99\textwidth,clip=]{./plots/alpha-vs-lat-by-flux.pdf}}
+ \caption{Mean tilt as a function of latitude for low (a) and high (b) flux ARs. On each panel the blue (orange) dots represents $\alpha_\mathrm{mod}$ ($\alpha_\mathrm{bar}$) individual data points. The dashed lines indicate the linear least-squares fits for both methods.} \label{fig:alpha-lat-by-flux}
+ \end{figure}
 
-
+\begin{table}[ht]
+\centering
+\caption{RMS error and Pearson correlation by flux group.}
+\label{tab:fluxgroups}
+\begin{tabular}{lcccc}
+\hline
+Group & RMSE $\alpha$ (deg) & $\rho_{\alpha}$ & RMSE $\alpha_{\mathrm{bar}}$ (deg) & $\rho_{\alpha_{\mathrm{bar}}}$ \\
+\hline
+Low Flux  & 11.68 & 0.391216 & 11.55 & 0.409670 \\
+High Flux & 13.48 & 0.131941 & 14.59 & 0.161803 \\
+\hline
+\end{tabular}
+\end{table}
   
  
  
@@ -319,10 +365,7 @@ The distribution of the difference between $\gamma_\mathrm{mod}$ and $\gamma_\ma
 \mpc{Comparative for different moments of the AR emergence}
 
 
-   \begin{figure} 
- %\centerline{\includegraphics[width=0.99\textwidth,clip=]{./plots/joyplot.png}}
- \caption{Tilt angle as a function of the AR emergence latitude $\theta$. Panels (a)–(d) correspond to different stages of emergence defined by $t_\mathrm{norm}$ ranges. Blue and orange dots show tilt estimates obtained with the Bayesian model and the magnetic barycenters, respectively. Each dot represents the mean per AR within one of the 11 temporal bins, reducing biases associated with the varying duration of the emergence. Solid lines show robust linear fits obtained with the Theil–Sen estimator. Fit parameters for each method are displayed in the inset, using the corresponding colors.} \label{fig:Joy-time}
- \end{figure}
+
 
 
  
@@ -331,10 +374,6 @@ The distribution of the difference between $\gamma_\mathrm{mod}$ and $\gamma_\ma
 
 \mpc{Tilt dependence of the Flux Strength?}
 
-   \begin{figure} 
- %\centerline{\includegraphics[width=0.99\textwidth,clip=]{./plots/joyplot-B.png}}
- \caption{Tilt angle as a function of the AR emergence latitude $\theta$. Panel (a) corresponds to the full set of 76 ARs in which each dot represents the mean per AR within one of the 11 temporal bins. Panels (b)–(d) correspond to 3 ranges of AR $\Phi_\mathrm{max}$. Blue and orange dots show tilt estimates obtained with the Bayesian model and the magnetic barycenters, respectively. Solid lines show robust linear fits obtained with the Theil–Sen estimator. Fit parameters for each method are displayed in the inset, using the corresponding colors.} \label{fig:Joy-flux}
- \end{figure}
 
 
 

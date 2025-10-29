@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex bayes-cycle23-part2"] 1761676017.41539 "bayes-cycle23-part2.aux" "bayes-cycle23-part2.bbl" "bayes-cycle23-part2" 1761676018.50839 0
+["bibtex bayes-cycle23-part2"] 1761759696.2635 "bayes-cycle23-part2.aux" "bayes-cycle23-part2.bbl" "bayes-cycle23-part2" 1761759697.41969 0
   "./biblio4.bib" 1761683466 68400 b4e2f73f03cf8f8014f0eac6fb8ff9a6 ""
   "./spr-mp-sola.bst" 1761683466 52009 49fb346403c506b68c2c2c4e8ccd2291 ""
-  "bayes-cycle23-part2.aux" 1761676018.1836 16966 9373e8fde51f33dc8f31956c8637be60 "pdflatex"
+  "bayes-cycle23-part2.aux" 1761759697.06349 17940 8d3e4e8f890b8ef3b3ad99467eacc7fb "pdflatex"
   (generated)
   "bayes-cycle23-part2.bbl"
   "bayes-cycle23-part2.blg"
   (rewritten before read)
-["pdflatex"] 1761676017.5653 "/data/Work/plot-tilt-stats/paper/bayes-cycle23-part2.tex" "bayes-cycle23-part2.pdf" "bayes-cycle23-part2" 1761676018.50861 0
-  "/data/Work/plot-tilt-stats/paper/bayes-cycle23-part2.tex" 1761676016.17064 57899 8a62d0adfe67fc1353a4320634f01813 ""
+["pdflatex"] 1761759696.41013 "/data/Work/plot-tilt-stats/paper/bayes-cycle23-part2.tex" "bayes-cycle23-part2.pdf" "bayes-cycle23-part2" 1761759697.41991 0
+  "/data/Work/plot-tilt-stats/paper/bayes-cycle23-part2.tex" 1761759694.89953 59216 be07850588a1bafbea960f828fef9785 ""
   "/etc/texmf/web2c/texmf.cnf" 1751300562.66804 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcbx0800.tfm" 1136768653 1536 f9f377d0a7a6ab86b894ea3edc27e42b ""
@@ -37,6 +37,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
@@ -100,19 +101,23 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1751300580.95804 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1751300609 8214294 7b490c61eff2f3ad7a9c60de350e405a ""
-  "bayes-cycle23-part2.aux" 1761676018.1836 16966 9373e8fde51f33dc8f31956c8637be60 "pdflatex"
-  "bayes-cycle23-part2.bbl" 1761676017.55961 13614 8880f3a39643ebfb8e7743e82ec4a803 "bibtex bayes-cycle23-part2"
-  "bayes-cycle23-part2.out" 1761676018.1846 2030 13cf6534866c36d20fb85f836dea18fc "pdflatex"
-  "bayes-cycle23-part2.tex" 1761676016.17064 57899 8a62d0adfe67fc1353a4320634f01813 ""
+  "bayes-cycle23-part2.aux" 1761759697.06349 17940 8d3e4e8f890b8ef3b3ad99467eacc7fb "pdflatex"
+  "bayes-cycle23-part2.bbl" 1761759696.4045 13614 8880f3a39643ebfb8e7743e82ec4a803 "bibtex bayes-cycle23-part2"
+  "bayes-cycle23-part2.out" 1761759697.06449 2030 13cf6534866c36d20fb85f836dea18fc "pdflatex"
+  "bayes-cycle23-part2.tex" 1761759694.89953 59216 be07850588a1bafbea960f828fef9785 ""
   "plots/9290-example.pdf" 1761683468 685791 b0f2bf01bd381f2ae76c7e7fb0a71078 ""
   "plots/9290-tilt.pdf" 1761683466 252911 8f975f9e424567dda2efb3f742c58d83 ""
   "plots/alpha-alpha.pdf" 1761672818.08234 38653 ad7d0727ef05669882d2c2375a64df39 ""
   "plots/alpha-err.pdf" 1761674300.86001 77860 eed9fefa6b2478a61045c90486439294 ""
+  "plots/alpha-vs-lat-by-flux.pdf" 1761759171.47875 35369 4dfffb22420b6aff2c60a8bc94b973f1 ""
+  "plots/alpha-vs-lat-by-tnorm.pdf" 1761752374.4449 66419 c91087b54578086b1335ed6e5eb09bb6 ""
+  "plots/alpha-vs-t_norm-by-lat.pdf" 1761747533.31811 95329 2e68031089a100326c8e24f37c106725 ""
   "plots/alpha-vs-t_norm.pdf" 1761683468 133628 76d7ef1f6aaff23a3603d896ad44f292 ""
   "plots/butterfly.pdf" 1761683466 114954 4d7d0746e819039809f0001a4daadaa6 ""
   "plots/diagram.pdf" 1761683466 9208 d239ca0cf2c77780e1a533460eefad58 ""
   "plots/flux-all.pdf" 1761683468 47387 c76d80822940b47176b4a8ee47720455 ""
   "plots/gamma-vs-t_norm.pdf" 1761683468 142172 2fb6ed70217bb82685a5a5829b33c4d8 ""
+  "plots/hist_cumrot.pdf" 1761746518.1291 24692 94dc2475d2fa673aaf5465bc778fcc74 ""
   "spr-sola.cls" 1761683466 72745 0e7e731c035f845efd26d73e9f7569a2 ""
   (generated)
   "bayes-cycle23-part2.aux"
