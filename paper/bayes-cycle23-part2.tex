@@ -227,7 +227,11 @@ Both methods yield broadly consistent tilt evolution for AR 9290, though with a 
  \subsection{General Comparison}
 \label{S-compareall}
 
-We assess the correlation between the two tilt estimates for the 108 ARs by comparing $\alpha_\mathrm{mod}$ with $\alpha_\mathrm{bar}$ (Figure~\ref{fig:alpha-alpha}a). Each point corresponds to the mean tilt value of a given AR within one of eleven bins defined along the normalized time axis ($0 \leq t_\mathrm{norm} \leq 1$). This procedure yields a total of 1111 points, fewer than the 1188 possible, since some ARs lack measurements close to the first bin near $t_\mathrm{norm}=0$. A linear least-squares fit to the scatter plot gives a slope of $0.58$ and a Pearson correlation coefficient of $0.65$, indicating a moderate correlation between the two methods. On average, the Bayesian estimates yield systematically smaller tilt angles than the barycenter method.
+
+In this section we compute the evolution of tilt angles for the full sample of 108 ARs using both the Bayesian FR method ($\alpha_\mathrm{mod}$) and the barycenter method ($\alpha_\mathrm{bar}$). Figure~\ref{fig:fluxes}a shows the normalized magnetic flux evolution for all ARs as a function of the normalized time $t_\mathrm{norm}$. Each dot corresponds to an estimate from a single magnetogram, while larger dots and shaded areas indicate the mean and standard deviation within different bins of $t_\mathrm{norm}$. The flux evolution curves exhibit a consistent pattern across the sample, with a rapid initial increase followed by a gradual approach to maximum flux. The dispersion in flux values is more pronounced during the early emergence stages, reflecting the variability in AR growth rates. This curve show a good correlation between the growth of $t_\mathrm{norm}$ and the AR magnetic flux suporting its use as a temporal reference for the emergence process.
+The histogram in Figure~\ref{fig:fluxes}b displays the distribution of maximum magnetic flux values for the 108 ARs. The distribution is right-skewed, with a median value of $8.2 \times 10^{21}$ Mx, indicated by the red dashed vertical line. This median value is used to categorize ARs into low-flux and high-flux groups for further analysis.
+
+
 
 
  \begin{figure} 
@@ -236,14 +240,16 @@ We assess the correlation between the two tilt estimates for the 108 ARs by comp
 \label{fig:fluxes}
  \end{figure}
 
-The comparison of tilt signs further reveals that $\sim 63\%$ of the values correspond to positive tilts for both methods, i.e., with the leading polarity closer to the equator. %, and this result is consistent across both methods. 
-In contrast, $\sim22\%$ of the cases show negative tilts in both estimates. Discrepancies of tilt sign between the two approaches arise in the remaining fraction of cases: about $10\%$ are positive in $\alpha_\mathrm{mod}$ but negative in $\alpha_\mathrm{bar}$, while $\sim5\%$ show the opposite behavior. These differences highlight the sensitivity of the tilt sign determination to the method employed, particularly in bipoles which are closely oriented towards the EW direction.
+ We assess the correlation between the two tilt estimates for the 108 ARs by comparing $\alpha_\mathrm{mod}$ with $\alpha_\mathrm{bar}$ (Figure~\ref{fig:alpha-alpha}a). Each point corresponds to the mean tilt value of a given AR within one of eleven bins defined along the normalized time axis ($0 \leq t_\mathrm{norm} \leq 1$). This procedure yields a total of 1111 points, fewer than the 1188 possible, since some ARs lack measurements close to the first bin near $t_\mathrm{norm}=0$. A linear least-squares fit to the scatter plot gives a slope of $0.57$ and a Pearson correlation coefficient of $0.63$, indicating a moderate correlation between the two methods. On average, the Bayesian estimates yield systematically smaller tilt angles than the barycenter method. High-flux and low-flux ARs, represented by orange and green lines respectively, exhibit similar trends, with slopes of $0.50$ and $0.64$ and correlation coefficients of $0.61$ and $0.66$, respectively. This consistency suggests that the systematic differences between the two methods are not strongly dependent on the AR magnetic flux.
+
+The comparison of tilt signs further reveals that $\sim 63\%$ of the values correspond to positive tilts for both methods, i.e., with the leading polarity closer to the equator.
+In contrast, $\sim22\%$ of the cases show negative tilts in both estimates. Discrepancies of tilt sign between the two approaches arise in the remaining fraction of cases: about $10\%$ are positive in $\alpha_\mathrm{mod}$ but negative in $\alpha_\mathrm{bar}$, while $\sim6\%$ show the opposite behavior. These differences highlight the sensitivity of the tilt sign determination to the method employed, particularly in bipoles which are closely oriented towards the EW direction.
 
 Figure~\ref{fig:alpha-alpha}b shows the histograms of the mean tilt values per AR per bin along $t_\mathrm{norm}$. The two methods yield very similar distributions, both in terms of mean values and dispersion, with $\alpha_\mathrm{mod}$ shown in blue and $\alpha_\mathrm{bar}$ in orange. This indicates that, despite the systematic differences seen in the direct comparison, both estimations capture a consistent range of tilt angles within our sample of ARs.
 
  \begin{figure} 
  \centerline{\includegraphics[width=0.99\textwidth,clip=]{./plots/alpha-alpha.pdf}}
-\caption{(a) Comparison of tilt angles estimated with the Bayesian FR method ($\alpha_\mathrm{mod}$) and the barycenter method ($\alpha_\mathrm{bar}$) for 108 ARs. Each point represents the mean tilt within a $t_\mathrm{norm}$ bin. The red line shows the linear least-squares fit to the sample. (b) Histogram of tilt angle distributions for both methods, with $\alpha_\mathrm{mod}$ in blue and $\alpha_\mathrm{bar}$ in orange.}
+\caption{(a) Comparison of tilt angles estimated with the Bayesian FR method ($\alpha_\mathrm{mod}$) and the barycenter method ($\alpha_\mathrm{bar}$) for 108 ARs. Each point represents the mean tilt within a $t_\mathrm{norm}$ bin. The red, orange, and green lines show the linear least-squares fit of the full sample, the high-flux sample, and the low-flux sample, respectively. (b) Histogram of tilt angle distributions for both methods, with $\alpha_\mathrm{mod}$ in blue and $\alpha_\mathrm{bar}$ in orange.}
 \label{fig:alpha-alpha}
  \end{figure}
 
@@ -252,12 +258,13 @@ Figure~\ref{fig:alpha-alpha}b shows the histograms of the mean tilt values per A
  \caption{(a) Evolution of the difference between Bayesian FR and barycenter tilt estimates ($\alpha_\mathrm{mod}-\alpha_\mathrm{bar}$) for all analyzed magnetograms of 108 ARs. Blue dots indicate the median value within each $t_\mathrm{norm}$ bin, and the shaded area represents the 1-$\sigma$ standard deviation. Green and orange dots corresponds to the difference for ARs with lower and higher flux respectively. (b) Evolution of the 1-$\sigma$ standard deviation of the difference between tilt estimations for the same groups.}\label{fig:diff-alpha}
  \end{figure}
 
-We compute the difference between the two methods as $\alpha_\mathrm{mod} - \alpha_\mathrm{bar}$ and analyze how it evolves during the emergence of 108 ARs. Figure~\ref{fig:diff-alpha}a shows this difference as a function of $t_\mathrm{norm}$, which provides a common temporal reference for the different {ARs}. Solid dots with connecting lines correspond to the mean values {at each temporal bin, and} %per AR within 11 bins of $t_\mathrm{norm}$ between $0$ and $1$, while 
-the shaded areas indicate the corresponding standard deviation.
+We compute the difference between the two methods as $\alpha_\mathrm{mod} - \alpha_\mathrm{bar}$ and analyze how it evolves during the emergence of 108 ARs. Figure~\ref{fig:diff-alpha}a shows this difference as a function of $t_\mathrm{norm}$, which provides a common temporal reference for the different {ARs}. Solid blue dots with connecting lines correspond to the median values {at each temporal bin, and} the shaded areas indicate the corresponding standard deviation. The green and orange dots represent the differences for low-flux and high-flux ARs, respectively. Across the entire sample, the median difference remains close to zero throughout the emergence process, indicating no significant systematic bias between the two methods on average. However, the standard deviation of the differences, shown in Figure~\ref{fig:diff-alpha}b, reveals a clear trend: it decreases from approximately $40^\circ$ at $t_\mathrm{norm} = 0$ to about $8^\circ$ at $t_\mathrm{norm} = 1$. This indicates that the two methods converge toward similar tilt estimates as the ARs approach their maximum flux.
 
 
-The differences between the two methods are largest during the early stages of emergence and progressively decrease as the ARs approach their maximum flux. This behavior is expected due to the influence of magnetic tongues, which decrease as the tongues retract toward the end of emergence. Figure~\ref{fig:diff-alpha}b shows that the distribution of differences becomes close to normal for $t_\mathrm{norm} \ge 0.5$, symmetrically distributed around a mean of zero. These distributions with decreasing standard deviations suggest that our sample includes a wide variety of effects that bias the barycenter-based estimation of the tilt. In particular, the normal distribution indicates that the emerging FRs likely span a broad range of twist values, producing tongues of different strengths and, consequently, varying projection effects on $\alpha_\mathrm{bar}$. 
+The largest difference between $\alpha_\mathrm{mod}$ and $\alpha_\mathrm{bar}$ during the early stages of emergence is expected due to the influence of magnetic tongues, which decrease as the tongues retract toward the end of emergence. The distribution of differences becomes close to normal for $t_\mathrm{norm} \ge 0.5$, symmetrically distributed around a mean of zero. These distributions with decreasing standard deviations suggest that our sample includes a wide variety of effects that bias the barycenter-based estimation of the tilt. In particular, the normal distribution indicates that the emerging FRs likely span a broad range of twist values, producing tongues of different strengths and, consequently, varying projection effects on $\alpha_\mathrm{bar}$. 
 
+
+Figure~\ref{fig:alpha-gamma}a shows the temporal evolution of the tilt angle, $\alpha$, as a function of $t_\mathrm{norm}$ for the full sample of 108 ARs. The blue and orange curves correspond to values derived from the tilt angles obtained with the model ($\alpha_\mathrm{mod}$) and with the magnetic barycenters ($\alpha_\mathrm{bar}$), respectively. Both methods reveal a broadly similar trend despite case by case differences presented in Figure~\ref{fig:diff-alpha}. Median values represented by solid dots connected with lines mantain stable between $\sim6^\circ$ and $\sim10^\circ$ throughout the emergence process. The broad dispersion of points reflects the large variability in the tilt angles across different ARs, including different fluxes and latitudes of emergence.
 
 
 
@@ -269,28 +276,32 @@ The differences between the two methods are largest during the early stages of e
  \end{figure}
 
 
+
+
+
+Figure~\ref{fig:alpha-gamma}b and c display the evolution of $\alpha$ for the low-flux and high-flux sub-samples, respectively. For both estimation methods the high-flux ARs present systematically larger tilt angles than the low-flux ARs, an effect that is most noticeable during the early stages of emergence. The shift in the median tilt between the two groups is driven largely by a reduction in the number of negative-tilt cases in the high-flux sample (fewer occurrences where the leading polarity is displaced away from the equator). This finding suggests that stronger, high-flux regions are less prone to the tongue-induced or convective biases that inflate the occurrence of negative tilts at low flux. This effect is more clearly captured by the Bayesian estimate $\alpha_\mathrm{mod}$, which yields a cleaner signal with reduced scatter.
+
+We compute the rotation rate of the bipole $\gamma$ as a function of $t_{\mathrm{norm}}$ in Figure~\ref{fig:alpha-gamma}d. We separated ARs with a positive (solid lines) and negative (dashed lines) total accumulated rotation. Blue dots and orange triangles indicate the median of $\gamma$ within temporal bins. Both estimates present similar trends in which rotations are stronger at early phases of the emergence and tilts tend to stabilize by the time of the maximum flux. Panels (e) and (f) show same trend for $\gamma$ for the low-flux and high-flux sub-samples. Comparing these samples we find that low-flux ARs presents stronger mean rotations along the emergence by a factor 2 than the high-flux ARs.
+
+
+The larger dispersion of $\gamma_{\mathrm{bar}}$ during early emergence (compared to $\gamma_{\mathrm{mod}}$) indicates that barycenter-based rotation estimates are more affected by transient effects such as magnetic tongues and small-scale flux rearrangements, while the Bayesian FR estimate provides a cleaner, more stable measure of the intrinsic bipole rotation. The decreasing trend observe for both estimates is more likely associated to the emergence process in which convective buffeting over the FR is less effective as the AR flux increases and polarities apart from each other.
+
+
     \begin{figure} 
-  \centerline{\includegraphics[width=0.99\textwidth,clip=]{./plots/hist_cumrot.pdf}}
- \caption{Distribution of the cumulative rotation during the emergence of ARs. Blue and orange distributions indicate the rotations obtained using the Bayesian method and the barycenter method, respectively. Panels corresponds to the cumulative rotation obtained for 108 (a), lower flux (b), and higher flux (c) ARs.
- } \label{fig:cum-gamma}
- \end{figure}
+      \centerline{\includegraphics[width=0.99\textwidth,clip=]{./plots/hist_cumrot.pdf}}
+      \caption{Distribution of the cumulative rotation during AR emergence. Blue and orange histograms show cumulative rotations obtained with the Bayesian method and the barycenter method, respectively. Panels correspond to (a) the full sample of 108 ARs, (b) the low–flux subsample, and (c) the high–flux subsample.}
+      \label{fig:cum-gamma}
+    \end{figure} 
 
-
-Figure~\ref{fig:gamma}a presents the temporal evolution of the bipole rotation, $\gamma$, as a function of $t_\mathrm{norm}$ for the full sample of 108 ARs. The blue and orange curves correspond to values derived from the tilt angles obtained with the model ($\gamma_\mathrm{mod}$) and with the magnetic barycenters ($\gamma_\mathrm{bar}$), respectively. Solid dots with connecting lines indicate the mean value %s per AR 
-%in each temporal bin, while 
-and the shaded areas denote the standard deviation \p{both computed} within each bin. Both methods reveal a broadly similar trend: \pc{this is tiny compared to $\sigma$. This looks not significant. Or it rather needs to be compared to $\sigma/\sqrt{108}$, the standard error of the mean.} a slight but systematic negative rotation, with the leading polarity displaced toward the solar poles. This effect is more clearly captured by the Bayesian estimate $\gamma_\mathrm{mod}$, which yields a cleaner signal with reduced scatter.
-
-Notably, differences between methods are most pronounced during the early phases of emergence ($t_\mathrm{norm}\le0.3$). The values of $\gamma_\mathrm{bar}$ exhibit significantly larger dispersion compared to $\gamma_\mathrm{mod}$, regardless of the rotation’s sense. For instance, at $t_\mathrm{norm}=0.1$, the standard deviation of $\gamma_\mathrm{bar}$ reaches $\sim1.7$, whereas $\gamma_\mathrm{mod}$ remains closer to $\sim1.0$. The temporal evolution of the spread also suggests that ARs undergo more rapid and variable rotation during the first half of emergence, gradually settling into smaller fluctuations \p{with an increasing flux.} %toward maximum flux. 
-This behavior is consistent with the expected impact of magnetic tongues and the complex reconfiguration of flux tube footpoints in the early stages of emergence.
-\pc{I rather believe that's the result of less effect of convective buffeting as the magnetic flux is increasing. }
-
-The distribution of the difference between $\gamma_\mathrm{mod}$ and $\gamma_\mathrm{bar}$ is shown in Figure~\ref{fig:gamma}b. The nearly Gaussian shape \pc{should provide some evidence if written} of this distribution indicates that the discrepancies between the two estimates are not dominated by a single systematic bias but instead reflect a broad variety of effects that influence tilt determination. In particular, the spread of differences likely reflects variations \pc{I do not follow. Here two methods to estimate $\gamma$ are compared, so I do not believe in the following:} in the intrinsic twist of the underlying FRs, which modulates the strength of magnetic tongues and, in turn, the projection effects on $\gamma_\mathrm{bar}$.
-
- 
+    Figure~\ref{fig:cum-gamma} shows the distribution of the total accumulated rotation,
+    computed as $\sum_{t=0}^{1}\gamma\,\Delta t$, for (a) the full sample of 108 ARs, (b) the low–flux subsample, and (c) the high–flux subsample. In each panel blue and orange histograms correspond to the Bayesian and barycenter estimates, respectively. Both methods yield similar central values and overall dispersions, indicating comparable rotation magnitudes on average. However, the Bayesian-derived distributions are generally more symmetric and closer to a normal shape, while the barycenter-derived distributions display larger skewness. This reduced asymmetry suggests the Bayesian method produces more robust cumulative-rotation estimates by mitigating biases from magnetic tongues and short-term flux rearrangements; the near-symmetric Bayesian distributions are consistent with convective buffeting acting predominantly as a stochastic driver of bipole rotation. \mpc{Still effect is small over few cases and both methods suggest that convective buffeting is the main contribution to AR rotations.}  
 
   
 \section{Latitudinal dependance of the Tilt Angle} %Methods %%%%%%%%%%%%%%
   \label{S-latitude}
+
+
+  
 
 
 
