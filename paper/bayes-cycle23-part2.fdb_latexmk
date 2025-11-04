@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex bayes-cycle23-part2"] 1761844472.05748 "bayes-cycle23-part2.aux" "bayes-cycle23-part2.bbl" "bayes-cycle23-part2" 1761844473.13081 0
+["bibtex bayes-cycle23-part2"] 1761844472.05748 "bayes-cycle23-part2.aux" "bayes-cycle23-part2.bbl" "bayes-cycle23-part2" 1762271175.71869 0
   "./biblio4.bib" 1761683466 68400 b4e2f73f03cf8f8014f0eac6fb8ff9a6 ""
   "./spr-mp-sola.bst" 1761683466 52009 49fb346403c506b68c2c2c4e8ccd2291 ""
-  "bayes-cycle23-part2.aux" 1761844472.81762 18109 c24985bb39e31a025a9d5a98ded600a4 "pdflatex"
+  "bayes-cycle23-part2.aux" 1762271175.38801 18109 c24985bb39e31a025a9d5a98ded600a4 "pdflatex"
   (generated)
   "bayes-cycle23-part2.bbl"
   "bayes-cycle23-part2.blg"
   (rewritten before read)
-["pdflatex"] 1761844472.20193 "/data/Work/plot-tilt-stats/paper/bayes-cycle23-part2.tex" "bayes-cycle23-part2.pdf" "bayes-cycle23-part2" 1761844473.13102 0
-  "/data/Work/plot-tilt-stats/paper/bayes-cycle23-part2.tex" 1761844470.79066 62740 38744d793745b6c91f3df6d101a65bb9 ""
+["pdflatex"] 1762271174.68486 "/data/Work/plot-tilt-stats/paper/bayes-cycle23-part2.tex" "bayes-cycle23-part2.pdf" "bayes-cycle23-part2" 1762271175.71892 0
+  "/data/Work/plot-tilt-stats/paper/bayes-cycle23-part2.tex" 1761849691.45037 62745 281f5dd0a9ef642b993a09e81540dd0a ""
   "/etc/texmf/web2c/texmf.cnf" 1751300562.66804 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcbx0800.tfm" 1136768653 1536 f9f377d0a7a6ab86b894ea3edc27e42b ""
@@ -102,23 +102,23 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1751300580.95804 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1751300609 8214294 7b490c61eff2f3ad7a9c60de350e405a ""
-  "bayes-cycle23-part2.aux" 1761844472.81762 18109 c24985bb39e31a025a9d5a98ded600a4 "pdflatex"
+  "bayes-cycle23-part2.aux" 1762271175.38801 18109 c24985bb39e31a025a9d5a98ded600a4 "pdflatex"
   "bayes-cycle23-part2.bbl" 1761844472.19664 13614 8880f3a39643ebfb8e7743e82ec4a803 "bibtex bayes-cycle23-part2"
-  "bayes-cycle23-part2.out" 1761844472.81862 2030 13cf6534866c36d20fb85f836dea18fc "pdflatex"
-  "bayes-cycle23-part2.tex" 1761844470.79066 62740 38744d793745b6c91f3df6d101a65bb9 ""
+  "bayes-cycle23-part2.out" 1762271175.39001 2030 13cf6534866c36d20fb85f836dea18fc "pdflatex"
+  "bayes-cycle23-part2.tex" 1761849691.45037 62745 281f5dd0a9ef642b993a09e81540dd0a ""
   "plots/9290-example.pdf" 1761683468 685791 b0f2bf01bd381f2ae76c7e7fb0a71078 ""
   "plots/9290-tilt.pdf" 1761683466 252911 8f975f9e424567dda2efb3f742c58d83 ""
-  "plots/alpha-alpha.pdf" 1761836649.04541 41006 ce4bc41a863cdeff3e6f37649202c319 ""
+  "plots/alpha-alpha.pdf" 1762266422.43336 41007 8c9485b96a53130835d9c4e9cd75f8a6 ""
   "plots/alpha-err.pdf" 1761674300.86001 77860 eed9fefa6b2478a61045c90486439294 ""
   "plots/alpha-vs-lat-by-flux.pdf" 1761759171.47875 35369 4dfffb22420b6aff2c60a8bc94b973f1 ""
-  "plots/alpha-vs-lat-by-tnorm.pdf" 1761752374.4449 66419 c91087b54578086b1335ed6e5eb09bb6 ""
+  "plots/alpha-vs-lat-by-tnorm.pdf" 1762193860.03371 72762 5c3e787fde783f3581f2af71a00f8bf5 ""
   "plots/alpha-vs-t_norm-by-lat.pdf" 1761747533.31811 95329 2e68031089a100326c8e24f37c106725 ""
-  "plots/alpha-vs-t_norm.pdf" 1761683468 133628 76d7ef1f6aaff23a3603d896ad44f292 ""
+  "plots/alpha-vs-t_norm.pdf" 1762268384.99925 133704 cd2f0d3c73c269252e791d065fbf670e ""
   "plots/butterfly.pdf" 1761683466 114954 4d7d0746e819039809f0001a4daadaa6 ""
   "plots/diagram.pdf" 1761683466 9208 d239ca0cf2c77780e1a533460eefad58 ""
   "plots/flux-all.pdf" 1761683468 47387 c76d80822940b47176b4a8ee47720455 ""
-  "plots/gamma-vs-t_norm.pdf" 1761683468 142172 2fb6ed70217bb82685a5a5829b33c4d8 ""
-  "plots/hist_cumrot.pdf" 1761833847.91353 25009 7696a6b3c52c5977e8d2676863193c32 ""
+  "plots/gamma-vs-t_norm.pdf" 1762268415.86957 142471 15678e2a03881fac709fcc03dae5eec1 ""
+  "plots/hist_cumrot.pdf" 1762268555.88927 24999 82ceed872dd77cdee1df67a722e9c940 ""
   "spr-sola.cls" 1761683466 72745 0e7e731c035f845efd26d73e9f7569a2 ""
   (generated)
   "bayes-cycle23-part2.aux"
